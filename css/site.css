@@ -1,6 +1,6 @@
 :root {
     /* Fonts */
-    --cf-title-font: 'Bebas Neue', sans-serif;
+    --cf-title-font: 'Racing Sans One', cursive;
     --cf-subtitle-font: 'Fira Sans', sans-serif;
     --cf-heading-font: 'Bebas Neue', sans-serif;
     --cf-body-font: 'Roboto', sans-serif;
@@ -11,14 +11,13 @@
     --cf-highlight: #fae100;
 }
 
-
 html,
 body {
     height: 100%;
 }
 
 body {
-    font-family: var(--cf-body-font);
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     background-image: url("/img/LandingPage_1920.png");
@@ -26,26 +25,25 @@ body {
     background-repeat: no-repeat;
 }
 
-.mainHeader {
-    height: 200px;
-    background-repeat: no-repeat;
-    background-position: right bottom;
+header {
+    padding-top: 125px;
 }
 
 .mainTitle {
-    font-family: var(--cf-title-font);
+    font-family: 'Racing Sans One', cursive;
     font-size: 3.5rem;
     line-height: 2rem;
     color: white;
 }
 
 .subTitle {
-    font-family: var(--cf-title-font);
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: .09rem;
     color: white;
 }
-
 
 .content {
     flex: 1 0 auto;
@@ -55,6 +53,67 @@ body {
     flex-shrink: 0;
 }
 
-.navColor {
-    color: var(--cf-highlight);
+.footer-main {
+    color: var(--cf-light);
+}
+
+
+/* Break Points-Media Queries */
+@media (min-width: 575.98px) {
+    .mainHeader {
+        background-image: url("/img/img/PortfolioBGTree_767.png");
+        height: 200px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .mainHeader {
+        background-image: url("/img/img/PortfolioBGTree_992.png");
+        height: 300px;
+    }
+
+    .mainTitle {
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        line-height: 1rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .mainHeader {
+        background-image: url("/img/img/PortfolioBGTree_1200.png");
+        height: 400px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .mainHeader {
+        background-image: url("/img/img/PortfolioBGTree_2560.png");
+        height: 500px;
+    }
+
+    .mainTitle {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+
+    .subTitle {
+        font-size: 1.7rem;
+        line-height: 1rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+}
+
+@media (min-width: 1399.98px) {
+    .mainHeader {
+        background-image: url("/img/img/PortfolioBGTree_2560.png");
+        height: 500px;
+    }
 }
