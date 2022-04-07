@@ -2,10 +2,10 @@
     --title-font: 'Racing Sans One', cursive;
     --sub-title-font: 'Fira Sans', sans-serif;
     --body-font: 'Roboto', sans-serif;
-    --at-dark: #212121;
-    --at-light: #ebebeb;
-    --at-darkblue: #00223d;
-    --at-highlight: #fae100;
+    --cf-dark: #212121;
+    --cf-light: #ebebeb;
+    --cf-darkblue: #00223d;
+    --cf-highlight: #fae100;
 }
 
 
@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url("/img/LandingPage_PortraitXS.png");
-    background-color: var(--at-darkblue);
+    background-color: var(--cf-darkblue);
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -32,14 +32,14 @@ body {
     font-family: var(--title-font);
     font-size: 1.8rem;
     line-height: 1.7rem;
-    color: var(--at-light);
+    color: var(--cf-light);
 }
 
 .subtitle {
     font-family: var(--sub-title-font);
     font-weight: 100;
     font-size: .7rem;
-    color: var(--at-light);
+    color: var(--cf-light);
     line-height: 1.2rem;
     letter-spacing: .1rem;
 }
@@ -53,10 +53,10 @@ body {
 }
 
 .navbarFontColor {
-    color: var(--at-light);
+    color: var(--cf-light);
 }
 
-/*---------------- MEDIA QUERIES -----------*/
+/* MEDIA QUERIES */
 
 @media (min-width: 374.98px) {
     body{
@@ -131,124 +131,3 @@ body {
         
     }
 }
-
-
-/* :root {
-    --cf-title-font: 'Racing Sans One', cursive;
-    --cf-subtitle-font: 'Fira Sans', sans-serif;
-    --cf-heading-font: 'Bebas Neue', sans-serif;
-    --cf-body-font: 'Roboto', sans-serif;
-
-    --cf-dark: #212121;
-    --cf-light: #ebebeb;
-    --cf-darkblue: #00223d;
-    --cf-highlight: #fae100;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-}
-
-header {
-    padding-top: 125px;
-}
-
-.mainTitle {
-    font-family: 'Racing Sans One', cursive;
-    font-size: 3.5rem;
-    line-height: 2rem;
-    color: white;
-}
-
-.subTitle {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: .6rem;
-    line-height: 1rem;
-    font-weight: 300;
-    letter-spacing: .09rem;
-    color: white;
-}
-
-.content {
-    flex: 1 0 auto;
-}
-
-.footer {
-    flex-shrink: 0;
-}
-
-.footer-main {
-    color: var(--cf-light);
-}
-
-
-
-@media (min-width: 575.98px) {
-    .mainHeader {
-        background-image: url("/img/img/PortfolioBGTree_767.png");
-        height: 200px;
-    }
-}
-
-@media (min-width: 767.98px) {
-    .mainHeader {
-        background-image: url("/img/img/PortfolioBGTree_992.png");
-        height: 300px;
-    }
-
-    .mainTitle {
-        font-size: 4.5rem;
-        line-height: 3.5rem;
-    }
-
-    .subTitle {
-        font-size: 1.2rem;
-        line-height: 1rem;
-        font-weight: 300;
-        letter-spacing: .1rem;
-    }
-}
-
-@media (min-width: 991.98px) {
-    .mainHeader {
-        background-image: url("/img/img/PortfolioBGTree_1200.png");
-        height: 400px;
-    }
-}
-
-@media (min-width: 1199.98px) {
-    .mainHeader {
-        background-image: url("/img/img/PortfolioBGTree_2560.png");
-        height: 500px;
-    }
-
-    .mainTitle {
-        font-size: 6rem;
-        line-height: 5rem;
-    }
-
-    .subTitle {
-        font-size: 1.7rem;
-        line-height: 1rem;
-        font-weight: 300;
-        letter-spacing: .1rem;
-    }
-}
-
-@media (min-width: 1399.98px) {
-    .mainHeader {
-        background-image: url("/img/img/PortfolioBGTree_2560.png");
-        height: 500px;
-    }
-}
-*/
