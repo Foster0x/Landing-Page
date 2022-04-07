@@ -1,5 +1,139 @@
 :root {
-    /* Fonts */
+    --title-font: 'Racing Sans One', cursive;
+    --sub-title-font: 'Fira Sans', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    --at-dark: #212121;
+    --at-light: #ebebeb;
+    --at-darkblue: #00223d;
+    --at-highlight: #fae100;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--body-font);
+    display: flex;
+    flex-direction: column;
+    background-image: url("/img/LandingPage_PortraitXS.png");
+    background-color: var(--at-darkblue);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    height: 100%;
+}
+
+.title {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+    color: var(--at-light);
+}
+
+.subtitle {
+    font-family: var(--sub-title-font);
+    font-weight: 100;
+    font-size: .7rem;
+    color: var(--at-light);
+    line-height: 1.2rem;
+    letter-spacing: .1rem;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.navbarFontColor {
+    color: var(--at-light);
+}
+
+/*---------------- MEDIA QUERIES -----------*/
+
+@media (min-width: 374.98px) {
+    body{
+        background-image: url("/img/LandingPage_Portrait2.png");
+    }
+    .title {
+        font-size: 2.4rem;
+        line-height: 2rem;
+    }
+
+    .subtitle {
+        font-weight: 100;
+        font-size: .94rem;
+        line-height: 1.2rem;
+    }
+}
+
+@media (min-width: 575.98px) {
+    body {
+        background-image: url("/img/LandingPage_768.png");
+        background-position: top right;
+    }
+}
+
+@media (min-width: 767.98px) {
+    body {
+        background-image: url("/img/LandingPage_1200.png");
+    }
+    .title {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    .subtitle {
+        font-size: 1.57rem;
+        line-height: 2rem;
+    }
+}
+
+@media (min-width: 991.98px) {
+    body {
+        background-image: url("/img/LandingPage_1200.png");
+    }
+    .title {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    .subtitle {
+        font-size: 1.95rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    body {
+        background-image: url("/img/LandingPage_1400.png");
+    }
+}
+
+@media (min-width: 1399.98px) {
+    body {
+        background-image: url("/img/LandingPage_1920.png");
+    }
+
+    .title {
+        font-size: 6rem;
+        line-height: 4.6rem;
+    }
+
+    .subtitle {
+        font-size: 2.35rem;
+        line-height: 2.7rem;
+        
+    }
+}
+
+
+/* :root {
     --cf-title-font: 'Racing Sans One', cursive;
     --cf-subtitle-font: 'Fira Sans', sans-serif;
     --cf-heading-font: 'Bebas Neue', sans-serif;
@@ -58,7 +192,7 @@ header {
 }
 
 
-/* Break Points-Media Queries */
+
 @media (min-width: 575.98px) {
     .mainHeader {
         background-image: url("/img/img/PortfolioBGTree_767.png");
@@ -117,3 +251,4 @@ header {
         height: 500px;
     }
 }
+*/
